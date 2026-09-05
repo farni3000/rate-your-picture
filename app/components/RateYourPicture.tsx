@@ -410,11 +410,10 @@ export default function RateYourPicture() {
 
         {preview && stage === "done" && result && (
           <div className="relative flex w-full flex-col items-center gap-8">
-            <div className="flex w-full flex-col items-center gap-5 md:flex-row md:items-start md:justify-center md:gap-4">
-              <div aria-hidden className="hidden md:block md:flex-1" />
+            <div className="relative flex w-full flex-col items-center">
               <div
                 ref={cardRef}
-                className="relative w-full max-w-md shrink-0 overflow-hidden rounded-2xl border border-zinc-800 shadow-2xl"
+                className="relative w-full max-w-md overflow-hidden rounded-2xl border border-zinc-800 shadow-2xl"
               >
                 <Image
                   src={preview}
@@ -425,7 +424,7 @@ export default function RateYourPicture() {
                   className="h-auto w-full object-contain"
                 />
               </div>
-              <div className="flex w-full max-w-md flex-row items-center justify-center gap-3 md:w-auto md:max-w-none md:flex-1 md:flex-col md:items-start">
+              <div className="mt-6 flex flex-col items-center gap-3 lg:absolute lg:left-[calc(50%+15rem)] lg:top-1/2 lg:mt-0 lg:-translate-y-1/2">
                 <button
                   onClick={reset}
                   className="whitespace-nowrap rounded-full bg-gradient-to-r from-rose-500 to-orange-500 px-7 py-3 text-base font-bold text-white shadow-lg transition-transform hover:scale-105"

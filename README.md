@@ -1,7 +1,7 @@
 # Rate Your Picture
 
 Upload a photo and let a brutally honest (but secretly supportive) AI critic
-give it a score out of 10, a punchy verdict, what's already working — and a
+give it a score out of 100, a punchy verdict, what's already working — and a
 roast where every burn comes with a concrete fix. Edgy, informal, funny,
 actually useful.
 

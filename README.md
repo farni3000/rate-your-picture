@@ -29,6 +29,19 @@ cp .env.example .env.local
 ## Run
 
 ```bash
+./start.sh
+```
+
+The script installs dependencies if needed, starts the dev server on port 3000
+and opens the browser once it responds. Without the browser tab:
+
+```bash
+./start.sh --no-browser
+```
+
+Alternatively run the dev server directly:
+
+```bash
 npm run dev
 ```
 

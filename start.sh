@@ -16,7 +16,7 @@ for arg in "$@"; do
 done
 
 PORT=3000
-URL="http://127.0.0.1:${PORT}"
+URL="http://localhost:${PORT}"
 
 if [ ! -f .env.local ]; then
   echo "Hinweis: .env.local fehlt – DEEPSEEK_API_KEY eintragen (siehe .env.example)." >&2

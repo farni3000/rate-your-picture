@@ -36,7 +36,8 @@ npm run build   # type-check + production build
 npm run start   # run production build
 ```
 
-Code edits hot-reload. A restart is only needed after changing `.env.local`.
+Code edits hot-reload. A restart is needed after changing `.env.local` or
+`next.config.ts`.
 
 ## Setup & environment
 
@@ -44,6 +45,10 @@ Code edits hot-reload. A restart is only needed after changing `.env.local`.
   Read **server-side only** in `app/api/rate/route.ts` — never expose it to the
   client. Get a key at https://platform.deepseek.com/api_keys.
 - Nothing else is required; everything runs locally.
+- `allowedDevOrigins: ["127.0.0.1"]` in `next.config.ts` — the dev server blocks
+  `_next/*` requests from origins other than `localhost` with 403. Without it,
+  opening the app via `127.0.0.1` loads the HTML but no JS (no hydration, so
+  drag & drop and buttons silently do nothing). `start.sh` opens `localhost`.
 
 ## Runtime data (`data/`, gitignored)
 

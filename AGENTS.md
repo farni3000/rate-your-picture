@@ -48,7 +48,7 @@ Code edits hot-reload. A restart is needed after changing `.env.local` or
 - `allowedDevOrigins: ["127.0.0.1"]` in `next.config.ts` — the dev server blocks
   `_next/*` requests from origins other than `localhost` with 403. Without it,
   opening the app via `127.0.0.1` loads the HTML but no JS (no hydration, so
-  drag & drop and buttons silently do nothing). `start.sh` opens `localhost`.
+  drag & drop and buttons silently do nothing). `run.sh` opens `localhost`.
 
 ## Runtime data (`data/`, gitignored)
 
